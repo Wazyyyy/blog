@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /* Implentation de polices d'écritures différentes*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html{
+    scroll-behavior: smooth; /*Faire que le défilement sur la page est doux*/
+}
+h1{
+	text-align:center; /*Alignement du texte*/
+	
+}
+h2{
+	text-align:center;/*Alignement du texte*/
+}
+h3{
+	font-family: 'Montserrat', sans-serif; /*Utilisation d'une autre police*/
+	margin-left: 30px; 		/*Alignement du texte avec marge*/
+	
+}
+li{
+	background-color:#549A9D;	/*changement de couleur du texte et du fond*/
+	color:#fff;
+	padding: 10px; /*Padding de 10 pour faire un block uniforme*/
+}
+body{
+    margin: 0px;
+    padding: 0px;	/* Mise en place du corps de la page sans marge avec une police importé*/
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display:flex; /* mise en place des blocks de navigation*/
+    flex-wrap:wrap;
+    justify-content: center; <!->
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', serif;	/*Police personnalisé et logo visible*/
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px; /*Mise en places des marges pour bien placer les onglets de navigations*/
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;	/*Mise en forme des textes des onglets de navigations avec un alignement et une bon espacement*/
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;	/*Mise en place de l'image de fond du header(en-tête) avec le texte par-dessus*/
+    background: url('images/carnivore.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+}
+header h1{
+    font-family: 'Playfair Display', serif; /*Modification de la police */
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center; /*Sous-texte en dessous du texte principale donc police et placement adéquat*/
+    border-bottom: 1px solid #fff;
+}
+
+p{
+	text-decoration:none; /*On supprime le marque des lien hypertexte*/
+}
+.main{
+    margin-top: 40px;
+    display: flex;	/*Mise en place du main et de sa mise en forme*/
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .card{ /*.card est une branche dde .content qui est lui-même dans le .main ce chemin permet d'accéder aux éléments spécifiques d'une balise si elle est implémentée dans une autre*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Mise en place du block : flex acceuillant le texte et image*/
+    margin-bottom:20px;
+	text-decoration:none;
+	
+}
+.main .content .card .left{
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color:black; /*Block de gauche pour le texte*/
+   color:#fff;
+
+}
+.main .content .card .left .h1 .a{
+   text-decoration:none;
+   display:block;
+   width:100%;	
+   height:100%;
+	color:white; /*changement de la couleur de la police  */
+}
+.main .content .card .right img{
+    height:300px;
+    width: 400px; /*Block droit pour les images*/
+    margin-top: 5px; 
+}
+.main .content .card .left2{ /*Autre synthèse d'une carte de texte pour changer sa couleur*/
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color:#549A9D; 
+   color:#fff;
+   border-radius:10px;
+
+}
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);	/*Mise en forme du footer (pieds de page) */
+    color: #fff;
+    padding: 30px 100px;;
+}
+
